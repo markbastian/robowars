@@ -5,23 +5,29 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
 
   :min-lein-version "2.5.3"
-  
-  :dependencies [[org.clojure/clojure "1.7.0"]
-                 [org.clojure/clojurescript "1.7.170"]
-                 [org.clojure/core.async "0.2.374"
-                  :exclusions [org.clojure/tools.reader]]
-                 [reagent "0.5.1"]]
-  
-  :plugins [[lein-figwheel "0.5.0-6"]
-            [lein-cljsbuild "1.1.2" :exclusions [[org.clojure/clojure]]]]
 
-  :source-paths ["src"]
+  :dependencies [[org.clojure/clojure "1.9.0-alpha10"]
+                 [org.clojure/clojurescript "1.9.229"]
+                 [org.clojure/core.async "0.2.385"
+                  :exclusions [org.clojure/tools.reader]]
+                 [reagent "0.5.1"]
+                 [figwheel-sidecar "0.5.7"]]
+
+  :plugins [[lein-figwheel "0.5.7"]
+            [lein-cljsbuild "1.1.4" :exclusions [[org.clojure/clojure]]]]
+
+  :source-paths ["src/main/clj" "src/main/cljc"]
+  :resource-paths ["src/main/resources"]
+  :test-paths ["src/test/clj" "src/test/cljc"]
+  :java-source-paths ["src/main/java"]
 
   :clean-targets ^{:protect false} ["resources/public/js/compiled" "target"]
 
   :cljsbuild {:builds
               [{:id "dev"
-                :source-paths ["src"]
+                :source-paths ["src/main/cljs" "src/main/cljc" "src/test/cljs"]
+                :test-paths ["src/test/cljs" "src/test/cljc"]
+                :resource-paths ["src/main/resources" "src/test/resources"]
 
                 ;; If no code is to be run, set :figwheel true for continued automagical reloading
                 :figwheel {:on-jsload "robowars.core/on-js-reload"}
@@ -35,39 +41,16 @@
                ;; production. You can build this with:
                ;; lein cljsbuild once min
                {:id "min"
-                :source-paths ["src"]
+                :source-paths ["src/main/cljs" "src/main/cljc"]
+                :resource-paths ["src/main/resources"]
                 :compiler {:output-to "resources/public/js/compiled/robowars.js"
                            :main robowars.core
                            :optimizations :advanced
                            :pretty-print false}}]}
 
-  :figwheel {;; :http-server-root "public" ;; default and assumes "resources"
-             ;; :server-port 3449 ;; default
-             ;; :server-ip "127.0.0.1"
+  :profiles {:dev {:resource-paths ["src/main/resources" "src/test/resources"]
+                   :dependencies []}
+             :test {:resource-paths ["src/main/resources" "src/test/resources"]}
+             :uberjar {:aot :all}}
 
-             :css-dirs ["resources/public/css"] ;; watch and update CSS
-
-             ;; Start an nREPL server into the running figwheel process
-             ;; :nrepl-port 7888
-
-             ;; Server Ring Handler (optional)
-             ;; if you want to embed a ring handler into the figwheel http-kit
-             ;; server, this is for simple ring servers, if this
-             ;; doesn't work for you just run your own server :)
-             ;; :ring-handler hello_world.server/handler
-
-             ;; To be able to open files in your editor from the heads up display
-             ;; you will need to put a script on your path.
-             ;; that script will have to take a file path and a line number
-             ;; ie. in  ~/bin/myfile-opener
-             ;; #! /bin/sh
-             ;; emacsclient -n +$2 $1
-             ;;
-             ;; :open-file-command "myfile-opener"
-
-             ;; if you want to disable the REPL
-             ;; :repl false
-
-             ;; to configure a different figwheel logfile path
-             ;; :server-logfile "tmp/logs/figwheel-logfile.log"
-             })
+  :figwheel {:css-dirs ["resources/public/css"]})

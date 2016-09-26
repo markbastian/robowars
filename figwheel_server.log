@@ -1,0 +1,677 @@
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.231 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.125 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.212 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.115 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.122 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.106 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.113 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.221 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.165 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.157 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.167 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.139 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.132 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.131 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.129 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.128 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.124 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.138 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.133 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.137 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.128 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.124 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+[31mCompiling "resources/public/js/compiled/robowars.js" failed.
+[0mERROR: Map literal must contain an even number of forms on file /Users/mbastian/workspace/robowars/src/robowars/core.cljs, line 11, column 44
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.068 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+[31mCompiling "resources/public/js/compiled/robowars.js" failed.
+[0mANALYSIS ERROR: Unsupported binding key: :> at line 13 src/robowars/core.cljs on file src/robowars/core.cljs, line 13, column 1
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.068 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+[31mCompiling "resources/public/js/compiled/robowars.js" failed.
+[0mANALYSIS ERROR: Unsupported binding key: :forward-one at line 13 src/robowars/core.cljs on file src/robowars/core.cljs, line 13, column 1
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.076 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+[31mCompiling "resources/public/js/compiled/robowars.js" failed.
+[0mANALYSIS ERROR: Unsupported binding key: :forward-one at line 13 src/robowars/core.cljs on file src/robowars/core.cljs, line 13, column 1
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.065 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.13 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.135 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.13 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.137 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.156 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.15 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.13 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.135 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.132 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.138 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.144 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.134 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.133 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.136 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.129 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.155 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.238 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.157 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.147 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.149 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.145 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.146 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.153 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.162 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.136 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.131 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.146 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.14 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.15 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.139 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.148 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.144 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.137 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.164 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.155 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.154 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+[31mCompiling "resources/public/js/compiled/robowars.js" failed.
+[0mERROR: Nested #()s are not allowed on file /Users/mbastian/workspace/robowars/src/robowars/core.cljs, line 36, column 71
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.071 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.142 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.144 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.159 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.151 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.158 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.149 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.161 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.156 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.151 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.145 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.15 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...
+notifying browser that file changed:  out/robowars/core.js
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.177 seconds.[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.264 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.211 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.233 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.184 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.189 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.19 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.226 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.168 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.164 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.177 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.169 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.186 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.165 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.163 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.16 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.179 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.159 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.167 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.17 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.175 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.159 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.185 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.177 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.18 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.168 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.172 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.171 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.17 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.182 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.18 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.174 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.18 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.178 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.185 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.176 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.182 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.198 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.177 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.189 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.177 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.186 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.18 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.174 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.17 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[31mFailed to compile "resources/public/js/compiled/robowars.js" in 0.128 seconds.[0m
+[36m----  Could not Analyze  src/robowars/core.cljs   line:20  column:1  ----[0m
+
+  [1mParameter declaration missing[0m
+
+  [36m18[0m  [36m(def moves [:forward-one :forward-two :forward-three :reverse-one :right :left :u-turn])[0m
+  [36m19[0m  [36m[0m
+  [33m20[0m  [1m(defn x {:move-1 18[0m
+  [0m  [0m  [33m^--- Parameter declaration missing[0m
+  [36m21[0m  [36m         :move-2 12[0m
+  [36m22[0m  [36m         :move-3 6[0m
+  [36m23[0m  [36m         :back-up 6[0m
+
+[36m----  Analysis Error : Please see src/robowars/core.cljs  ----[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.376 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.201 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.206 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.216 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.184 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.186 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.224 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.178 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.211 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.178 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.215 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.182 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.175 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.205 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.299 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.239 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.229 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.24 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[36m----  Compiler Warning on   src/robowars/core.cljs   line:86  column:46  ----[0m
+
+  [1mUse of undeclared Var robowars.core/swap[0m
+
+  [36m82[0m  [36m      [:button {:on-click #(swap! app-state (partial move-forward (:active-robot @app-state)))} "Move 1"][0m
+  [36m83[0m  [36m      [:button {:on-click #(swap! app-state update-in [:robots :twonky] rotate-right)} "Rotate right"][0m
+  [36m84[0m  [36m      [:button {:on-click #(swap! app-state update-in [:robots :twonky] rotate-left)} "Rotate left"][0m
+  [36m85[0m  [36m      [:button {:on-click #(swap! app-state update-in [:robots :twonky] u-turn)} "U-turn"][0m
+  [33m86[0m  [1m      [:button {:on-click #(.log js/console (swap app-state update :active-robot next-player))} "next"]]]))[0m
+  [0m  [0m  [33m                                             ^--- Use of undeclared Var robowars.core/swap[0m
+  [36m87[0m  [36m[0m
+  [36m88[0m  [36m(reagent/render-component [hello-world][0m
+  [36m89[0m  [36m                          (. js/document (getElementById "app")))[0m
+
+[36m----  Compiler Warning : Please see src/robowars/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.238 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.217 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[36m----  Compiler Warning on   src/robowars/core.cljs   line:89  column:38  ----[0m
+
+  [1mUse of undeclared Var robowars.core/with-out-strs[0m
+
+  [36m85[0m  [36m      [:button {:on-click #(swap! app-state update-in [:robots :twonky] u-turn)} "U-turn"][0m
+  [36m86[0m  [36m      [:button {:on-click #(.log js/console[0m
+  [36m87[0m  [36m                                 (-> (swap! app-state update :active-robot next-player)[0m
+  [36m88[0m  [36m                                     cljs.pprint/pprint[0m
+  [33m89[0m  [1m                                     with-out-strs))} "next"]]]))[0m
+  [0m  [0m  [33m                                     ^--- Use of undeclared Var robowars.core/with-out-strs[0m
+  [36m90[0m  [36m[0m
+  [36m91[0m  [36m(reagent/render-component [hello-world][0m
+  [36m92[0m  [36m                          (. js/document (getElementById "app")))[0m
+
+[36m----  Compiler Warning : Please see src/robowars/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.217 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.211 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[31mFailed to compile "resources/public/js/compiled/robowars.js" in 0.088 seconds.[0m
+[36m----  Could not Analyze  src/robowars/core.cljs   line:19  column:48  ----[0m
+
+  [1mUnsupported binding form: (when (#{active-robot} a) b)[0m
+
+  [36m18[0m  [36m(defn next-player [{:keys [active-robot robots]}][0m
+  [33m19[0m  [1m  (->> robots keys cycle (partition 2 1) (some (fn [[a b] (when (#{active-robot} a) b)]))))[0m
+  [0m  [0m  [33m                                               ^--- Unsupported binding form: (when (#{active-robot} a) b)[0m
+  [36m20[0m  [36m[0m
+  [36m21[0m  [36m(def x {:move-1 18[0m
+  [36m22[0m  [36m         :move-2 12[0m
+
+[36m----  Analysis Error : Please see src/robowars/core.cljs  ----[0m
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.193 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.211 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.199 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.205 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[36m----  Compiler Warning on   src/robowars/core.cljs   line:86  column:46  ----[0m
+
+  [1mUse of undeclared Var robowars.core/swap[0m
+
+  [36m82[0m  [36m      [:button {:on-click #(swap! app-state (partial move-forward (:active-robot @app-state)))} "Move 1"][0m
+  [36m83[0m  [36m      [:button {:on-click #(swap! app-state update-in [:robots :twonky] rotate-right)} "Rotate right"][0m
+  [36m84[0m  [36m      [:button {:on-click #(swap! app-state update-in [:robots :twonky] rotate-left)} "Rotate left"][0m
+  [36m85[0m  [36m      [:button {:on-click #(swap! app-state update-in [:robots :twonky] u-turn)} "U-turn"][0m
+  [33m86[0m  [1m      [:button {:on-click #(.log js/console (swap app-state next-player))} "next"]]]))[0m
+  [0m  [0m  [33m                                             ^--- Use of undeclared Var robowars.core/swap[0m
+  [36m87[0m  [36m[0m
+  [36m88[0m  [36m(reagent/render-component [hello-world][0m
+  [36m89[0m  [36m                          (. js/document (getElementById "app")))[0m
+
+[36m----  Compiler Warning : Please see src/robowars/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.337 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.267 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.212 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.215 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.204 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.314 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.2 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.218 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.206 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.188 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.206 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.292 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.196 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.187 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.215 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.203 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.186 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.21 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.182 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js
+[0mCompiling "resources/public/js/compiled/robowars.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/robowars.js" in 0.182 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  out/robowars/core.js

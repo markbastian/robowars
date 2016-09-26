@@ -2,6 +2,8 @@
   (:require
    [goog.Uri :as guri]
    [goog.userAgent.product :as product]
+   [goog.object :as gobj]
+   [cljs.reader :refer [read-string]]
    [cljs.core.async :refer [put! chan <! map< close! timeout alts!] :as async]
    [figwheel.client.socket :as socket]
    [figwheel.client.utils :as utils]   
@@ -14,19 +16,48 @@
    [cljs.core.async.macros :refer [go go-loop]])
   (:import [goog]))
 
+(def _figwheel-version_ "0.5.7")
+
 ;; exception formatting
 
-(defn figwheel-repl-print [args]
-  (socket/send! {:figwheel-event "callback"
-                 :callback-name "figwheel-repl-print"
-                 :content args})
-  args)
+(defn figwheel-repl-print
+  ([stream args]
+   (socket/send! {:figwheel-event "callback"
+                  :callback-name "figwheel-repl-print"
+                  :content {:stream stream
+                            :args args}})
+   nil)
+  ([args]
+   (figwheel-repl-print :out args)))
+
+(defn console-out-print [args]
+  (.apply (.-log js/console) js/console (into-array args)))
+
+(defn console-err-print [args]
+  (.apply (.-error js/console) js/console (into-array args)))
+
+(defn repl-out-print-fn [& args]
+  (console-out-print args)
+  (figwheel-repl-print :out args)
+  nil)
+
+(defn repl-err-print-fn [& args]
+  (console-err-print args)
+  (figwheel-repl-print :err args)
+  nil)
+
+(defn enable-repl-print! []
+  (set! *print-newline* false)
+  (set-print-fn! repl-out-print-fn)
+  (set-print-err-fn! repl-err-print-fn)  
+  nil)
 
 (def autoload?
   (if (utils/html-env?)
     (fn []
       (condp = (or (try
-                     (.getItem js/localStorage "figwheel_autoload")
+                     (when (js* "typeof localstorage !== 'undefined'")
+                       (.getItem js/localStorage "figwheel_autoload"))
                      (catch js/Error e
                        false))
                    "true")
@@ -37,26 +68,13 @@
 (defn ^:export toggle-autoload []
   (when (utils/html-env?)
     (try
-      (.setItem js/localStorage "figwheel_autoload" (not (autoload?)))
+      (when (js* "typeof localstorage !== 'undefined'")
+        (.setItem js/localStorage "figwheel_autoload" (not (autoload?))))
       (utils/log :info
                  (str "Figwheel autoloading " (if (autoload?) "ON" "OFF")))
       (catch js/Error e
         (utils/log :info
                    (str "Unable to access localStorage"))))))
-
-(defn console-print [args]
-  (.apply (.-log js/console) js/console (into-array args))
-  args)
-
-(defn repl-print-fn [& args]
-  (-> args
-      console-print
-      figwheel-repl-print)
-  nil)
-
-(defn enable-repl-print! []
-  (set! *print-newline* false)
-  (set! *print-fn* repl-print-fn))
 
 (defn get-essential-messages [ed]
   (when ed
@@ -147,12 +165,12 @@
 (let [base-path (utils/base-url-path)]
   (defn eval-javascript** [code opts result-handler]
     (try
-      (binding [*print-fn* repl-print-fn
-                *print-newline* false]
+      (enable-repl-print!)
+      (let [result-value (utils/eval-helper code opts)]
         (result-handler
          {:status :success,
           :ua-product (get-ua-product)
-          :value (utils/eval-helper code opts)}))
+          :value result-value}))
       (catch js/Error e
         (result-handler
          {:status :exception
@@ -165,7 +183,12 @@
          {:status :exception
           :ua-product (get-ua-product)          
           :value (pr-str e)
-          :stacktrace "No stacktrace available."})))))
+          :stacktrace "No stacktrace available."}))
+      (finally
+        ;; should we let people shoot themselves in the foot?
+        ;; you can theoretically disable repl printing in the repl
+        ;; but for now I'm going to prevent it
+        (enable-repl-print!)))))
 
 (defn ensure-cljs-user
   "The REPL can disconnect and reconnect lets ensure cljs.user exists at least."
@@ -196,6 +219,10 @@
           :compile-failed  (on-compile-fail msg)
           nil)))
 
+(defn auto-jump-to-error [opts error]
+  (when (:auto-jump-to-source-on-error opts)
+    (heads-up/auto-notify-source-file-line error)))
+
 ;; this is seperate for live dev only
 (defn heads-up-plugin-msg-handler [opts msg-hist']
   (let [msg-hist (focus-msgs #{:files-changed :compile-warning :compile-failed} msg-hist')
@@ -212,21 +239,27 @@
       (compile-refail-state? msg-names)
       (do
         (<! (heads-up/clear))
-        (<! (heads-up/display-error (format-messages (:exception-data msg)) (:cause msg))))
+        (<! (heads-up/display-exception (:exception-data msg)))
+        (auto-jump-to-error opts (:exception-data msg)))
       
       (compile-fail-state? msg-names)
-      (<! (heads-up/display-error (format-messages (:exception-data msg)) (:cause msg)))
+      (do
+        (<! (heads-up/display-exception (:exception-data msg)))
+        (auto-jump-to-error opts (:exception-data msg)))
       
       (warning-append-state? msg-names)
-      (heads-up/append-message (:message msg))
+      (heads-up/append-warning-message (:message msg))
       
       (rewarning-state? msg-names)
       (do
         (<! (heads-up/clear))
-        (<! (heads-up/display-warning (:message msg))))
+        (<! (heads-up/display-warning (:message msg)))
+        (auto-jump-to-error opts (:message msg)))
       
       (warning-state? msg-names)
-      (<! (heads-up/display-warning (:message msg)))
+      (do
+        (<! (heads-up/display-warning (:message msg)))
+        (auto-jump-to-error opts (:message msg)))
       
       (css-loaded-state? msg-names)
       (<! (heads-up/flash-loaded))))))
@@ -249,8 +282,30 @@
       (when (:heads-up-display opts)
         (go
          (<! (timeout 3000))
-         (heads-up/display-system-warning "Connection from different project"
-                                          "Shutting connection down!!!!!"))))))
+         (heads-up/display-system-warning
+          "Connection from different project"
+          "Shutting connection down!!!!!"))))))
+
+(defn enforce-figwheel-version-plugin [opts]
+  (fn [msg-hist]
+    (when-let [figwheel-version (-> msg-hist first :figwheel-version)]
+      (when (not= figwheel-version _figwheel-version_)
+        (socket/close!)
+        (.error js/console "Figwheel: message received from different version of Figwheel.")
+        (when (:heads-up-display opts)
+          (go
+            (<! (timeout 2000))
+            (heads-up/display-system-warning
+             "Figwheel Client and Server have different versions!!"
+             (str "Figwheel Client Version <strong>" _figwheel-version_ "</strong> is not equal to "
+                  "Figwheel Sidecar Version <strong>" figwheel-version "</strong>"
+                  ".  Shutting down Websocket Connection!"
+                  "<h4>To fix try:</h4>"
+                  "<ol><li>Reload this page and make sure you are not getting a cached version of the client.</li>"
+                  "<li>You may have to clean (delete compiled assets) and rebuild to make sure that the new client code is being used.</li>"                  
+                  "<li>Also, make sure you have consistent Figwheel dependencies.</li></ol>"))))))))
+
+#_((enforce-figwheel-version-plugin {:heads-up-display true}) [{:figwheel-version "yeah"}])
 
 ;; defaults and configuration
 
@@ -264,16 +319,22 @@
 
 (def default-on-jsload identity)
 
+(defn file-line-column [{:keys [file line column]}]
+  (cond-> ""
+    file (str "file " file)
+    line (str " at line " line)
+    (and line column) (str ", column " column)))
+
 (defn default-on-compile-fail [{:keys [formatted-exception exception-data cause] :as ed}]
   (utils/log :debug "Figwheel: Compile Exception")
   (doseq [msg (format-messages exception-data)]
     (utils/log :info msg))
   (if cause
-    (utils/log :info (str "Error on file " (:file cause) ", line " (:line cause) ", column " (:column cause))))
+    (utils/log :info (str "Error on " (file-line-column ed))))
   ed)
 
 (defn default-on-compile-warning [{:keys [message] :as w}]
-  (utils/log :warn (str "Figwheel: Compile Warning - " message))
+  (utils/log :warn (str "Figwheel: Compile Warning - " (:message message) " in " (file-line-column message)))
   w)
 
 (defn default-before-load [files]
@@ -291,7 +352,7 @@
                        (if (utils/html-env?) js/location.host "localhost:3449")
                        "/figwheel-ws")
    :load-warninged-code false
-
+   :auto-jump-to-source-on-error false
    ;; :on-message identity
    
    :on-jsload default-on-jsload
@@ -299,8 +360,8 @@
 
    :on-cssload default-on-cssload
    
-   :on-compile-fail default-on-compile-fail
-   :on-compile-warning default-on-compile-warning
+   :on-compile-fail #'default-on-compile-fail
+   :on-compile-warning #'default-on-compile-warning
 
    :reload-dependents true
    
@@ -320,8 +381,18 @@
         (dissoc :jsload-callback))
     config))
 
+(defn fill-url-template [config]
+  (if (utils/html-env?)
+      (update-in config [:websocket-url]
+             (fn [x]
+               (-> x
+                   (string/replace "[[client-hostname]]" js/location.hostname)
+                   (string/replace "[[client-port]]" js/location.port))))
+      config))
+
 (defn base-plugins [system-options]
   (let [base {:enforce-project-plugin enforce-project-plugin
+              :enforce-figwheel-version-plugin enforce-figwheel-version-plugin
               :file-reloader-plugin     file-reloader-plugin
               :comp-fail-warning-plugin compile-fail-warning-plugin
               :css-reloader-plugin      css-reloader-plugin
@@ -360,15 +431,18 @@
           #(let [plugins' (:plugins opts) ;; plugins replaces all plugins
                  merge-plugins (:merge-plugins opts) ;; merges plugins
                  system-options (-> config-defaults
-                                  (merge (dissoc opts :plugins :merge-plugins))
-                                  (handle-deprecated-jsload-callback))
+                                    (merge (dissoc opts :plugins :merge-plugins))
+                                    handle-deprecated-jsload-callback
+                                    fill-url-template)
                  plugins  (if plugins'
                             plugins'
                             (merge (base-plugins system-options) merge-plugins))]
              (set! utils/*print-debug* (:debug opts))
-             #_(enable-repl-print!)         
+             (enable-repl-print!)         
              (add-plugins plugins system-options)
              (reloading/patch-goog-base)
+             (doseq [msg (:initial-messages system-options)]
+               (socket/handle-incoming-message msg))
              (socket/open system-options))))))
   ([] (start {})))
 
@@ -376,3 +450,45 @@
 (def watch-and-reload-with-opts start)
 (defn watch-and-reload [& {:keys [] :as opts}] (start opts))
 
+
+;; --- Bad Initial Compilation Helper Application ---
+;;
+;; this is only used to replace a missing compile target
+;; when the initial compile fails due an exception
+;; this is intended to be compiled seperately
+
+(defn fetch-data-from-env []
+  (try
+    (read-string (gobj/get js/window "FIGWHEEL_CLIENT_CONFIGURATION"))
+    (catch js/Error e
+      (cljs.core/*print-err-fn*
+       "Unable to load FIGWHEEL_CLIENT_CONFIGURATION from the environment")
+      {:autoload false})))
+
+(def console-intro-message
+"Figwheel has compiled a temporary helper application to your :output-file.
+
+The code currently in your configured output file does not
+represent the code that you are trying to compile.
+
+This temporary application is intended to help you continue to get
+feedback from Figwheel until the build you are working on compiles
+correctly.
+
+When your ClojureScript source code compiles correctly this helper
+application will auto-reload and pick up your freshly compiled
+ClojureScript program.")
+
+(defn bad-compile-helper-app []
+  (enable-console-print!)
+  (let [config (fetch-data-from-env)]
+    (println console-intro-message)
+    (heads-up/bad-compile-screen)
+    (when-not js/goog.dependencies_
+      (set! js/goog.dependencies_ true))
+    (start config)
+    (add-message-watch
+     :listen-for-successful-compile
+     (fn [{:keys [msg-name]}]
+       (when (= msg-name :files-changed)
+         (set! js/location.href js/location.href))))))
